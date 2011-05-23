@@ -1,0 +1,5 @@
+# List of of functions to test in 'GeoGebraCasIntegrationTest'
+# Input is on the left side, expected output is on the right side
+# Some random functions
+Factor[x^2 - y^2]  ==>  (x - y) (y + x)
+x + x              ==>  2x
