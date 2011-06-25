@@ -11,6 +11,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jukito.version>1.1</jukito.version>
 	</properties>
 
 <!-- 	<repositories> -->
@@ -31,7 +32,7 @@
 		<dependency>
             <groupId>org.jukito</groupId>
             <artifactId>jukito</artifactId>
-            <version>1.0</version>
+            <version>${jukito.version}</version>
             <scope>test</scope>
         </dependency>
 
