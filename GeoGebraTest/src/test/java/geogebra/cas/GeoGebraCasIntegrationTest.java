@@ -86,7 +86,9 @@ public class GeoGebraCasIntegrationTest {
 	private static void writeLinesToFile(String fileName, Iterable<String> lines) throws IOException {
 		File testDir = new File(OUTPUT_DIRECTORY);
 		if (!testDir.exists()) {
-			testDir.mkdir();
+			if (!testDir.mkdir()) {
+				throw new RuntimeException(OUTPUT_DIRECTORY + " directory could not be created");
+			}
 		}
 		String fileContent = Joiner.on("\n").join(lines);
 		Files.write(fileContent, new File(testDir, fileName), Charsets.ISO_8859_1);
